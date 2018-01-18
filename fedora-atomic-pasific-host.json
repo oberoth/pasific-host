@@ -33,15 +33,12 @@
         "dracut-network",
         "e2fsprogs",
         "efibootmgr",
-        "etcd",
         "fedora-release-atomichost",
-        "flannel",
         "grub2-efi",
         "gzip",
         "initscripts",
         "iptables-services",
         "kernel",
-        "kubernetes",
         "less",
         "libreswan",
         "libsss_sudo",
@@ -55,7 +52,6 @@
         "passwd",
         "policycoreutils-python",
         "policycoreutils-python-utils",
-        "python-docker-py",
         "rootfiles",
         "rpm",
         "rpm-ostree",
@@ -68,6 +64,6 @@
         "vim-enhanced"
     ],
     "default_target": "multi-user.target",
-    "units": ["docker.service", "docker-storage-setup.service"],
+    "units": ["crio.service"],
     "postprocess-script": "treecompose-post.sh"
 }
